@@ -1,0 +1,14 @@
+Links
+● Create a page that contains a list of links to some external websites
+● When user clicks on the link, a page opens in a new tab
+
+Relative links
+● Create two pages (index.html and contact.html)
+● Both pages contain titles and they are connected using relative links
+● The second page (contact.html) should contain an &quot;email link&quot; with your
+email address
+
+On page linking
+● Create a long html page (with a lot of paragraphs)
+● Add a link on the bottom of the page
+● Link is used to move the user to the top of the page (to the main title)

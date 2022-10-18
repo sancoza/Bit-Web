@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+<!-------------- exercise 1. -------------->
+<h2> &#10003; Text/Password Fields</h1>
+<form action="">
+  <label for="userName">Username:</label>
+  <input type="text" name="userName" id="userName" placeholder="Enter your Username">
+  <br>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" placeholder="Enter your password">
+  <br>
+
+  <a href="./reset-password.html">Forgot Password?</a>
+  <br>
+  <br>
+  <button>
+    <a href="./welcome-page.html">Login</a>
+  </button>
+</form>
+
+<!-------------- exercise 2. -------------->
+
+<h2>&#10003; Textarea/Radio/Checkbox</h2>
+<form>
+  <!----------- radio input type !----------->
+  <h5>1. Select your favorite food:</h5>
+  
+  <input checked type="radio" name="pizza" value="Pizza">
+  <label for="text">Pizza</label>
+  <br>
+  <br>
+  <input type="radio" name="vegetable" value="vegetable">
+  <label for="text">Vegetables</label>
+  <br>
+  <br>
+  <input type="radio" name="hamburger" value="hamburger">
+  <label for="text">Hamburger</label>
+  <br>
+  <br>
+
+ <!----------- checkbox input type !----------->
+
+  <h5>2. Select your favorite color:</h5>
+  
+  <input checked type="checkbox" name="red" value="red">
+  <label for="text">Red</label>
+  <br>
+  <br>
+  <input checked type="checkbox" name="blue" value="blue">
+  <label for="text">Blue</label>
+  <br>
+  <br>
+  <input type="checkbox" name="orange" value="orange">
+  <label for="text">Orange</label>
+  <br>
+  <br>
+
+
+<!----------- textarea element !----------->
+
+  <h5>3. Write something about yourself:</h5>
+  
+<textarea  cols="30" rows="10"></textarea>
+  <br>
+  <br>
+</form>
+
+<!-------------- exercise 3. -------------->
+
+<h2>&#10003; Dropdown/Multiselect</h2>
+
+
+<br>
+
+  <select name="day" id="day">
+    <option>Day</option>
+    <option value="4">4</option>
+    <option value="3">3</option>
+    <option value="2">2</option>
+    <option value="1">1</option>
+  </select>
+
+  <select name="month" id="month">
+  <option>Month</option>
+
+  <option value="april">April</option>
+  <option value="march">March</option>
+  <option value="february">February</option>
+  <option value="january">January</option>
+</select>
+<select name="year" id="year">
+<option>Year</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+</select>
+<br>
+<br>
+<form action="/action_page.php">
+  <label for="cars">Choose animal :</label> <br>
+  <select name="animals" id="animals" multiple>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="monkey">Monkey</option>
+    <option value="fish">Fish</option>
+    <option value="puppy">Puppy</option>
+    <option value="bird">Bird</option>
+    <option value="elephant">An elephant</option>
+    <option value="zebra">Zebra</option>
+  </select>
+</form>
+<br>
+<br>
+<!-------------- exercise 4. -------------->
+
+<h2>&#10003; File input/Submit</h2>
+<br>
+<br>
+<form>
+  <label for="img">Upload Then VS Now image:</label>
+  <br>
+  <br>
+  <input type="file" id="img" name="img" accept="image/*">
+  <br>
+  <br>
+  <label for="img">Add description and recipes:</label>
+  <br>
+  <textarea cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <button>
+  <a href="./welcome-page.html">Sumbit</a>
+</button>
+</form>
+
+<!-------------- exercise 5. -------------->
+
+<h2>&#10003; Reset/Button/Hidden</h2>
+<br>
+<br>
+<form>
+<input type="radio" name="pizza" value="Pizza">
+<label for="text">You Must Check Thise</label>
+<br>
+<br>
+<label for="textarea">Fill in your information: </label>
+<textarea name="text" id="" cols="30" rows="10" placeholder="Fullname, Address, Phone"></textarea>
+<br>
+<br>
+<input type="reset" value="Reset Form">
+<button>
+<a href="./welcome-page.html"> Sumbit &rarr;</a>
+</button>
+</form>
+<br>
+<br>
+<!-------------- exercise 6. -------------->
+
+<h2>&#10003; Labels/Grouping</h2>
+<br>
+
+<h5>Welcome to catering reservations</h5>
+<div>
+<form>
+  <label> &#x2022; Personal data:</label>
+  <p>Enter your Fullname:</p>
+<input type="text" placeholder="You Fullname" required>
+<p>Enter your Email Address:</p>
+<input type="email" placeholder="Your Email" required>
+<p>Enter your Phone numer</p>
+<input type="tel" name="phone" required placeholder="Your phone">
+</form>
+</div>
+<br>
+<br>
+<div>
+  <form>
+    <label> &#x2022; Location:</label>
+    <p>Enter your City:</p>
+  <input type="text" placeholder="Your City" required>
+  <p>Enter your Street:</p>
+  <input type="email" placeholder="Your Street" required>
+  <p>Enter your Street number:</p>
+  <input type="tel" name="number" required placeholder="Your Street number">
+  </form>
+  </div>
+  <div>
+    <br>
+    <br>
+    <form>
+      <label> &#x2022; Event info:</label>
+      <p>What event are you organizing?</p>
+    
+    </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="./server.html" method="get">
+      <!-- min lenght 3 -->
+      <label>Unesite ime</label> <br />
+      <input
+        minlength="5"
+        type="text"
+        name="name"
+        placeholder="name"
+        value="Sandra"
+        required
+      />
+
+      <label for="last-name">Unesite prezime</label>
+      <input
+        type="text"
+        name="last-name"
+        placeholder="lastname"
+        id="last-name"
+        required
+      />
+      <br />
+      <label>Unesite adresu</label>
+      <input type="text" name="address" placeholder="address" />
+      <br />
+      <br />
+
+      <label>Enter password</label>
+      <input type="password" name="password" />
+      <br />
+      <label for="">Enter email</label>
+      <input type="email" name="email" />
+      <br />
+      <br />
+      <p>What's your favorite food?</p>
+      <input type="radio" name="food" value="pizza" id="p" checked /><label for="p"
+        >Pizza</label
+      >
+      <input type="radio" name="food" value="burger" /><label>Burger</label>
+      <input type="radio" name="food" value="pasta" /><label>Pasta</label>
+
+      <br />
+      <br />
+
+      <p>What's your favorite music?</p>
+      <input type="checkbox" name="music[]" value="rock" /><label>Rock</label>
+      <input type="checkbox" name="music[]" value="jazz" checked /><label>Jazz</label>
+      <input type="checkbox" name="music[]" value="folk" checked /><label>Folk</label>
+
+      <br />
+      <br />
+
+      <label>Choose your size</label>
+      <select name="size" id="">
+        <option value="s">small</option>
+        <option value="m">medium</option>
+        <option value="l">large</option>
+      </select>
+
+      <br /><br />
+      <label>Choose otions</label>
+      <select multiple name="options" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <br /><br />
+      <label for="">Insert some text</label>
+      <br />
+      <textarea
+        name="text"
+        cols="30"
+        rows="10"
+        placeholder="Please inser some text"
+      ></textarea>
+
+      <br /><br />
+
+<input type="file" name="image">
+
+
+      <input type="submit" value="Send message" />
+      <button>Pošalji</button>
+    </form>
+  </body>
+</html>
