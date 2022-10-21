@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+:root {
+  --red:#c1392b;
+  --yellow:#ffbe00;
+  --grey:#2d3e50;
+  --greylight:#cdcdcd;
+  --background:#262626;
+  --formtext:#b9bec3;
+}
+ *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  background: var(--background);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+margin: 0 auto;
+background: #fff;
+max-width: 900px;
+height: 100vh;
+padding: 40px;
+}
+h1 {
+  font-size: 3rem;
+  color: var(--grey);
+  text-align: center;
+}
+h1 span {
+  color: var(--yellow);
+  
+}
+.line {
+  content: "";
+  height: 2px;
+  width: 450px;
+  background: var(--greylight);
+  margin: 0 auto;
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+form label {
+  font-size: 1.5rem;
+  color: #446282;
+  font-weight: 500;
+}
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+form input {
+  border: 1px solid #d1d1d1;
+  outline: none;
+  margin-bottom: 20px;
+}
+form input::placeholder {
+  font-size: 1rem;
+  color: #aab0b6;
+}
+form input:focus {
+  border: 1px solid #d1d1d1;
+  -webkit-box-shadow: 0px 0px 10px 1px #507194; 
+box-shadow: 0px 0px 10px 1px #507194;
+  outline: none;
+}
+.btn {
+ display: block;
+ background: var(--red);
+ width: 20rem;
+ color: #fff;
+ text-align: center;
+ border-radius: 7px;
+ margin:30px auto;
+ padding: 5px;
+}
+.btn:hover {
+background: #9c2c20;
+-webkit-box-shadow: 0px 0px 10px 1px #9d615b; 
+box-shadow: 0px 0px 10px 1px #9d615b;
+}
