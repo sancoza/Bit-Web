@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+.content .pos-relative {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  margin-bottom: 70px;
+}
+.content .pos-apsolute {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.bottom {
+  position: absolute;
+  bottom: -15rem;
+}
+.move-top i {
+  position: absolute;
+  right: 90px;
+  bottom: 20px;
+  font-size: 60px;
+  color: #777777;
+  position: fixed;
+}
+.content p {
+  padding: 20px 0;
+}
