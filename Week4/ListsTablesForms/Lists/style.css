@@ -1,0 +1,22 @@
+
+ul.list-1 {
+  list-style-type: circle;
+}
+ul .list-2 {
+  list-style:square;
+}
+ol.list-3 {
+  list-style-type: upper-alpha;
+}
+ol.list-4 {
+  list-style-type: upper-roman;
+}
+ul.list-5,
+ul.list-6 {
+  list-style-image: url('https://www.w3schools.com/css/sqpurple.gif');
+  width: 200px;
+  display: inline-block;
+}
+ul.list-6 {
+  list-style-position: inside;
+}
