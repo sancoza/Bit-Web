@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: sans-serif;
+}
 img {
   width: 300px;
   height: 300px;
@@ -11,8 +14,20 @@ img {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h1 {
+  text-align: center;
+  color: rgb(194, 26, 26);
+  margin-top: 30px;
+}
+
+/****** positioning exercise ******/
 .content .pos-relative {
   position: relative;
   top: 50px;
@@ -22,20 +37,243 @@ img {
 .content .pos-apsolute {
   position: absolute;
   right: 10px;
-  top: 15px;
+  top: 5rem;
 }
 .bottom {
-  position: absolute;
-  bottom: -15rem;
+  position: relative;
+  left: 15rem;
 }
 .move-top i {
   position: absolute;
   right: 90px;
-  bottom: 20px;
+  bottom: 70px;
   font-size: 60px;
   color: #777777;
   position: fixed;
 }
 .content p {
   padding: 20px 0;
+}
+/****** advanced positioning Homework ******/
+.positioning {
+  position: relative;
+  margin: 30px 0 30px 0;
+  background: #777777;
+  height: 40vh;
+}
+h2 {
+  color: #c78d04;
+  padding-bottom: 20px;
+  background: #fff;
+  padding: 20px 0;
+}
+.positioning .nav {
+  padding: 20px;
+  background: #ffb504;
+}
+.positioning .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.positioning .nav ul li {
+  margin-right: 20px;
+  font-weight: 600;
+}
+.positioning .nav ul li:nth-child(1),
+.positioning .nav ul li:nth-child(3) {
+  background: #c5c5c5;
+  padding: 15px 20px;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 20rem;
+  padding: 20px 0;
+  background: #fff;
+  top: 8rem;
+  left: 12.44rem;
+  -webkit-box-shadow: 0px 9px 16px -2px rgba(0, 0, 0, 0.81);
+  box-shadow: 0px 9px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.sub-menu ul li {
+  padding: 10px;
+  font-weight: 600;
+}
+.sub-menu ul li:nth-child(2) {
+  background: #777777;
+}
+/****** z index exercise  ******/
+.box {
+  background: #c1392b;
+  height: 100px;
+  width: 100px;
+}
+.box:nth-child(2) {
+  background: #ffbe00;
+}
+.box:nth-child(3) {
+  background: #2d3e50;
+}
+.d-flex {
+  position: relative;
+  display: flex;
+  justify-content: baseline;
+  gap: 10rem;
+}
+.boxes-2 .box:nth-child(2) {
+  position: relative;
+  top: -40px;
+  left: 40px;
+}
+.boxes-2 .box:nth-child(3) {
+  position: relative;
+  top: -80px;
+  left: 80px;
+}
+.boxes-3 {
+  position: relative;
+}
+.boxes-3 .box {
+  position: absolute;
+  margin-top: 7.5rem;
+}
+.boxes-3 .box:nth-child(2) {
+  top: -58px;
+  left: 40px;
+  z-index: 1;
+}
+.boxes-3 .box:nth-child(1) {
+  top: -115px;
+  left: 90px;
+  z-index: 2;
+}
+/****** float exercise  ******/
+.navigation ul li {
+  padding: 60px;
+  display: inline;
+}
+.navigation ul li a {
+  color: #fff;
+  font-weight: 600;
+  float: right;
+  margin-right: 20px;
+}
+.navigation ul {
+  padding: 20px;
+}
+.navigation {
+  background: #c1392b;
+}
+/****** recreate page  ******/
+.nav-bar {
+  background: #c1392b;
+}
+.nav-bar .nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+}
+.nav-bar .nav ul li a {
+  color: #fff;
+}
+.nav-bar .nav ul li:hover a {
+  border-bottom: 1px solid #fff;
+}
+
+.main {
+  background: url(./img/background.png);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+}
+
+.card-box {
+  width: 280px;
+  height: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.red {
+  background: #c1392b;
+}
+.blue {
+  background: #2d3e50;
+}
+.yellow {
+  background: #ffb504;
+}
+.green {
+  background: #27ae61;
+}
+.card p {
+  color: #4a547a;
+  font-weight: 400;
+  font-stretch: expanded;
+  width: 280px;
+}
+.sidebar {
+  background: #ffbe00;
+  padding: 15px 25px;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+}
+
+.sidebar ul li a {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.sidebar ul li a:after {
+  content: '';
+  background: rgb(44, 44, 44);
+  height: 1px;
+  width: 200px;
+  display: block;
+  margin: 8px 0;
+}
+.sidebar ul li:hover {
+  background: #ffd34f;
+}
+.cards > .card {
+  flex: 0 0 33.333333%;
+  margin-bottom: 20px;
+ 
+ 
+}
+footer, header {
+  background: #2d3e50;
+  padding: 20px;
+}
+footer p {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+header .nav ul {
+  display: flex;
+justify-content: space-between;
+}
+header .nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
 }
