@@ -1,0 +1,40 @@
+Size
+● Find an image with a wide aspect ratio (e.g. 16:9, 21:9...)
+● Include that image three times on the page
+● Each image should be in a separate row
+● The first image should be 200px high
+● The second image should be 200px wide
+● The third image should be 200px wide and 200px high
+
+Aligning
+● Modify the previously example
+● Align the first image to the right
+● Align the second image in the center
+● Align the third one to the left
+
+Background
+● Create a page with a main title
+● Add a couple of subheadings
+● After each subheading, add a single paragraph with some text
+● The page should be long enough for the scrollbar to appear
+Repeat
+● Find an image that can be included as a repeating image on the
+page
+● Use that image to set a background image on the body element
+Attachment
+
+● Modify the previous example
+● Prevent image from moving while the user scrolls down the
+page
+Position
+● Use the previous code structure
+● Remove previously defined styles for the background image
+● Add a new background image. It shouldn’t be repeated
+● Image should be horizontally positioned on the right
+● The image should be positioned vertically in the body center
+● Make it fixed
+Size
+● Modify the previous example
+● Make image stretch and cover the whole body
+● However, the image should not be deformed (aspect ratio has
+to be preserved)

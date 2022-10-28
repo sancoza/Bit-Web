@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Ubuntu-Regular.ttf);
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+}
+.images img {
+  padding: 20px;
+}
+.images img:nth-child(1) {
+height: 200px;
+align-self: flex-end;
+}
+.images img:nth-child(2) {
+width: 200px;
+align-self: center;
+}
+.images img:nth-child(3) {
+width: 200px;
+height: 200px;
+align-self: flex-start;
+}
+main {
+  position: relative;
+}
+.background::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .3;
+  content: "";
+  z-index: -1;
+   background: url(https://images.unsplash.com/photo-1530367215503-327c484541ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=976&q=80);
+  width: 100%; 
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.background h1 {
+  text-align: center;
+}
+h2 {
+  margin: 20px 0;
+}
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.scroll {
+  background-image: url(https://i.pinimg.com/originals/dd/85/73/dd85730a93322adf362956f3e996fa92.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+.alignment img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+.img-text {
+  position: relative;
+  color: #fff;
+}
+.img-text img {
+  width: 100%;
+}
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+}
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
+.footer {
+  margin-top: 20px;
+  padding: 40px 0;
+  text-align: center;
+background: #5783e6;
+letter-spacing: 1px;
+}
