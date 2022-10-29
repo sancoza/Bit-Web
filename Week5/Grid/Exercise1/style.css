@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 5fr 20fr 5fr;
+  grid-gap: 10px;
+  height: 95vh;
+}
+.header {
+  background-color: lightblue;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background: orange;
+}
+.main {
+  background-color: lightgreen;
+}
+.aside-left {
+  background-color: lightcoral;
+}
+.aside-right {
+  background-color: lightcoral;
+}
