@@ -20,7 +20,7 @@ body {
   line-height: 2;
 }
 .container {
-  width: 980px;
+  max-width: 80%;
   margin: 0 auto;
 }
 nav {
