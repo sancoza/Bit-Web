@@ -234,7 +234,7 @@ nav ul li:hover a {
 .card1 h5 {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .card1 p {
@@ -255,6 +255,8 @@ nav ul li:hover a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  text-align: center;
+  line-height: 1.5;
   padding: 40px 0;
   background: #3bdd9a;
   color: #fff;
@@ -326,4 +328,54 @@ footer ul li a {
 }
 footer p a {
   color: var(--orange);
+}
+@media (max-width: 768px) {
+  .container,
+  .container1 {
+    width: 700px;
+  }
+  header {
+    height: 50vh;
+    overflow: hidden;
+  }
+  .showcase {
+    height: 50vh;
+  }
+  .showcase h1 {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1.2rem;
+    margin: 21px auto 40px auto;
+    width: 31rem;
+  }
+  .title::before,
+  .title::after {
+    width: 7rem;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .about-us-content {
+    flex: 33%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .card {
+    flex-basis: 45%;
+  }
+  .cards1 {
+    flex-wrap: wrap;
+  }
+  .card1 {
+    flex: 43%;
+  }
+  form input {
+    width: 32.9%;
+  }
+  textarea {
+    width: 100%;
+  }
 }
