@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>CSS Project</title>
   </head>
   <body>
@@ -27,10 +27,8 @@
         </ul>
       </nav>
       <div class="showcase">
-        <div class="text">
           <h1>We shape our buildings thereafter they shape us</h1>
           <a href="#" class="btn">Read More</a>
-        </div>
       </div>
     </header>
     <!---------- main--------->
@@ -203,12 +201,13 @@
           <div class="card1">
             <h5>Address</h5>
             <p>
-              <i class="fa fa-map-marker"></i> 1680 Richmond St, Corner in, ON N58 3d7, <br> USA
+              <i class="fa fa-map-marker"></i> 1680 Richmond St, Corner in, <br>
+               ON N58 3d7, USA
             </p>
           
           </div>
           <div class="card1">
-            <img src="./images/house.png" alt="" />
+            <img src="./images/house.png" alt="house img" />
           </div>
         </div>
         <iframe
@@ -227,12 +226,15 @@
           <h2>Mail Us</h2>
           <div class="simbol"></div>
         </div>
-        <form action="">
+        <form>
+          <div class="form-group">
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Telephone" />
+          </div>
+          <textarea placeholder="Message"></textarea>
         </form>
-        <textarea placeholder="Message"></textarea>
+     
         <a href="" class="btn">Submit</a>
       </section>
     </main>
