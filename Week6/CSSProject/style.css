@@ -21,7 +21,9 @@
 } */
 
 /********* basic style  ********/
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -41,6 +43,7 @@ li {
 }
 .container1 {
   max-width: 1200px;
+  width: 100%;
   margin: 20px auto;
 }
 .d-flex {
@@ -193,11 +196,14 @@ nav ul li:hover a {
   margin-right: 10px;
 }
 /********* services ********/
-
+.services {
+  margin: 0 auto;
+}
 .cards {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, 380px);
+  grid-template-columns: repeat(auto-fit, 340px);
+  justify-content: center;
 }
 .card {
   padding: 20px;
@@ -234,7 +240,7 @@ nav ul li:hover a {
 /********* contact ********/
 .cards1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .card1 h5 {
   font-size: 1.5rem;
@@ -283,10 +289,15 @@ nav ul li:hover a {
   height: 10rem;
 }
 /* contact form */
+.mail {
+  margin: 0 auto;
+  padding: 20px;
+}
 .form-group {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 form input {
@@ -352,7 +363,7 @@ footer p a {
   }
   header {
     background: none;
-    height: 65vh;
+    height: 75vh;
   }
   nav {
     flex-direction: column;
@@ -365,6 +376,12 @@ footer p a {
   .logo span {
     border: 4px solid var(--grey);
     border-right: none;
+  }
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    grid-template-columns: none;
   }
   nav ul {
     flex-direction: column;
