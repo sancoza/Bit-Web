@@ -39,3 +39,9 @@
   padding-right: 0;
   padding-left: 0;
 }
+input {
+  width:200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
