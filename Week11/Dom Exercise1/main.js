@@ -8,12 +8,27 @@ Create a second function that, when triggered, selects all <li> elements on the 
 The function also sets a class that sets some bg color to every <li> element.
 */
 
-
-// function changeBackground(){
-//   var list = document.querySelector("body").getElementsByTagName("ul")
-//   list[1].style.backgroundColor = "red";
+// function setBackgroundColor() {
+//   var lists = document.getElementsByTagName('ul');
+//   lists[1].style.backgroundColor = 'blue';
 // }
-// changeBackground();
+// setBackgroundColor();
+
+// function myFunction() {
+//   var element = document.getElementById("second");
+//   element.classList.add("mystyle");
+// }
+// myFunction();
+
+function selectAllListItems() {
+  var listItems = document.getElementsByTagName('li');
+  for (var i = 0; i < listItems.length; i++) {
+    listItems[i].style.backgroundColor = 'yellow';
+  }
+}
+
+selectAllListItems()
+
 
 
 // function rowBackground(){
@@ -45,6 +60,8 @@ The function also sets a class that sets some bg color to every <li> element.
 //   console.log(rows)
 // }
 // rowBackground();
+
+
 
 /*
 Create one more unordered list and one more function
