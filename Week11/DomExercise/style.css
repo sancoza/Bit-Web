@@ -1,0 +1,29 @@
+:root {
+  js-color:#FF9E9E;
+}
+
+.grandparent {
+  background: #C0EEE4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+  flex-direction: column;
+}
+.parent {
+  background: #F8F988;
+  height: 10rem;
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center; 
+}
+.child {
+  background: #FFCAC8;
+  height: 5rem;
+  width: 30%;
+}
