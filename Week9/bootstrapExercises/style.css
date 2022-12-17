@@ -1,0 +1,9 @@
+.col-custom {
+  background: aqua;
+  border: 1px solid black;
+  height:calc(100vh-10px); 
+}
+.col-header {
+  height: 100px;
+  background: aqua;
+}
