@@ -1,3 +1,10 @@
 .mystyle {
   background: red;
 }
+.new {
+  background: yellow;
+}
+.thirdList {
+  background-color: darkgreen;
+  text-transform: uppercase;
+}

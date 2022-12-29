@@ -20,16 +20,23 @@ The function also sets a class that sets some bg color to every <li> element.
 // }
 // myFunction();
 
-function selectAllListItems() {
-  var listItems = document.getElementsByTagName('li');
-  for (var i = 0; i < listItems.length; i++) {
-    listItems[i].style.backgroundColor = 'yellow';
-  }
-}
+// function selectAllListItems() {
+//   var listItems = document.getElementsByTagName('li');
+//   for (var i = 0; i < listItems.length; i++) {
+//     listItems[i].style.backgroundColor = 'yellow';
+//   }
+// }
 
-selectAllListItems()
+// selectAllListItems();
 
+// function selectAll() {
+//   var listElement = document.getElementsByTagName('li');
+//   for (let i = 0; i < listElement.length; i++) {
+//     listElement[i].classList.add('new')
 
+//   }
+// }
+// selectAll();
 
 // function rowBackground(){
 //   var rows = document.querySelector("body").getElementsByTagName("li")
@@ -61,27 +68,21 @@ selectAllListItems()
 // }
 // rowBackground();
 
-
-
 /*
 Create one more unordered list and one more function
 The function​ should select only <li> elements from that last list
 Each <li> element should get a class that sets some bg color and transforms the text to uppercase.*/
 
-// function backgroundAndUpperCase () {
-// var list = document.querySelector("body").getElementsById("ul")
-
-// var rows = document.querySelector("ul").getElementsByTagName("li");
-
-// rows[2].style.backgroundColor = "brown";
-
-//     for(var i = 0; i < rows.length; i++) {
-//       rows[i] = rows[i].textContent.toUpperCase();
-//     } 
-// console.log(rows)
+// function thirdList() {
+//   var thirdList = document.getElementsByTagName("ul")[2];
+//   var thirdListItems = thirdList.children;
+//   for (i = 0; i < thirdListItems.length; i++) {
+//       thirdListItems[i].classList.add("thirdList");
+//   }
+//   console.log(thirdListItems);
 // }
-
-// backgroundAndUpperCase();
+// var result = thirdList();
+// console.log(result);
 
 //Traversing
 /*
@@ -94,18 +95,16 @@ in the first unordered list using node relations.
 Apply class to that newly selected <li> element
 */
 
-// function removeClass() {
-//   var row = document.querySelector(".active");
-//   row.removeAttribute("class");
-
-//   var row1 = document.querySelector(".traversing").firstElementChild.firstElementChild.firstElementChild;
-
-//   row1.setAttribute("class", "active")
-//   console.log(row)
-//   console.log(row1)
-  
+// function changeActive() {
+//   var activeLiNode = document.querySelector('.active');
+//   activeLiNode.classList.remove('active');
+//   var newActiveLiNode =
+//     activeLiNode.parentElement.parentElement.previousElementSibling
+//       .firstElementChild.firstElementChild;
+//   newActiveLiNode.classList.add('active');
 // }
-// removeClass();
+
+// changeActive();
 
 /*
 Access/Update Text Node
@@ -117,25 +116,40 @@ The function should take some text as an argument.
 The function should select the last <li> element in the list 
 and replace its text with text passed as the function argument.
 */
-// function alert() {
-//   var row = document.querySelector(".alert").firstElementChild.firstElementChild;
-//   var alert = row.textContent;
-//   console.log(alert);
-// }
-// alert();
+function alert() {
+  var row = document.querySelector(".alert").firstElementChild.firstElementChild;
+  var alert = row.textContent;
+  console.log(alert);
+}
+alert();
 
-// function changeText() {
-//   var liEl = document.querySelector("ul li");
-//   document.querySelector("ul li").textContent = "novi clan";
-//   console.log(liEl);
-// }
-// changeText();
+function changeText() {
+  var liEl = document.querySelector("ul li");
+  document.querySelector("ul li").textContent = "novi clan";
+  console.log(liEl);
+}
+changeText();
+
+function alertText() {
+  var listNodes = document.querySelector('ul');
+  var liNode = listNodes.firstElementChild;
+  window.alert(liNode.textContent);
+}
+alertText();
+
+function changeText() {
+  document.querySelector('ul li').textContent;
+  document.querySelector('ul li').textContent = 'Some new paragraph text';
+}
+
+changeText();
+
 
 // InnerHTML
 // Do the following exercise in two ways: using DOM manipulation methods and using innerHTML.
 // Create a function that is used for building a dropdown/select element.
 // It first builds a dropdown and then adds it to the DOM.
-// The function takes two arguments: the first is an array of strings and the second is a 
+// The function takes two arguments: the first is an array of strings and the second is a
 // DOM node to which the dropdown will be added.
 // Create options that correspond to items in the passed array and add them to the select element.
 // Add the whole dropdown list to DOM .
@@ -152,8 +166,8 @@ and replace its text with text passed as the function argument.
 //     }
 //     var body = document.querySelector('body');
 //     var node = document.createElement(domNode);
-//     node.appendChild(select);  
-//     body.appendChild(node);    
+//     node.appendChild(select);
+//     body.appendChild(node);
 // }
 
 // var array = ['Home', 'About', 'Contact'];
@@ -167,7 +181,6 @@ and replace its text with text passed as the function argument.
 // The function checks each input element that belongs to the form.
 // If the element has the required attribute and no data, it should get red borders.
 
-
 // function validateForm () {
 //   var input = document.getElementsByTagName('input');
 //   for (var i = 0; i < input.length; i++) {
@@ -176,4 +189,13 @@ and replace its text with text passed as the function argument.
 //       }
 //   }
 // }
-// validateForm ()
+// validateForm ();
+
+
+
+
+
+
+
+
+
