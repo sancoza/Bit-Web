@@ -16,3 +16,8 @@ function turnOff() {
 }
 
 button.addEventListener('click', turnOff);
+
+
+$(document).ready(function () {
+  
+})
