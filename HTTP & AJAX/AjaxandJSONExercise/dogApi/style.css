@@ -1,0 +1,6 @@
+img {
+  max-width: 15%;
+  max-height: 130px;     
+  padding: 5px; 
+  justify-content:stretch;
+}
